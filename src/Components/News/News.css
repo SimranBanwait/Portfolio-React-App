@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.news{
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: SOLID BLACK 2PX;================================================================= */
+}
+
+
+
+/*========================================== 
+top part of the nbews compnent starts here 
+============================================*/
+.news-top{
+    width: 100%;
+    height: auto;
+    margin: 0rem;
+    padding: 1rem;
+    /* border: SOLID red 2PX=====================================================================; */
+}
+/* logo and the h1 sections  */
+.news-header{
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 1rem; */
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.news-left{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+}
+.news-left img{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+.news-left h1 {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 5rem;
+}
+/* searchbox and button area  */
+
+.news-right {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+.user-input{
+    width: 40rem;
+    height: 4rem;
+    margin-right: 1rem;
+    font-size: 1.8rem;
+    padding: 1rem;
+    border: solid #b3b3b3 1px;
+    border-radius: .6rem;
+}
+.search-button {
+    width: auto;
+    height: 4rem;
+    font-size: 2rem;
+    padding: 0rem 2rem;
+    color: white;
+    background-color: #007bff;
+    border-radius: .7rem;
+    border: none;
+    transition: 0.3s;
+}
+.search-button:hover{
+    background-color: #28a745;
+}
+.search-button:active {
+    color: white;
+    border-color: gray;
+}
+
+/* bottom buttons */
+.news-bottom{
+    margin-top: 1rem;
+}
+.search-topic{
+    width: auto;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding: 0rem 1rem;
+    margin: 0rem .5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border:solid #2c59ff 1px;
+    border-radius: .5rem;
+    transition: 0.3s;
+}
+.search-topic:hover{
+    background-color: #007bff;
+    color: white;
+    border: solid #007bff 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================================== 
+cards section of grid and all cards deisgn
+============================================*/
+.news-cards-body{
+    width: 100%;
+    height: auto;
+    margin: 0rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.8rem;
+    /* border: SOLID red 2PX;====================================================================== */
+}
+.news-card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: SOLID gray 1px;
+}
+
+.card-image {
+    width: 100%;
+    height: 22rem;
+}
+.card-title{
+    width: 100%;
+    height: auto;
+    margin: 0rem auto;
+    padding: 1rem;
+    font-size: normal;
+    font-weight: 600;
+    font-family: "poppins";
+}
+.card-text{
+    width: 100;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.card-bottom{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    position: bottom;
+    justify-content: space-between;
+}
+.card-button{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    background-color: #143352;
+    border-radius: .5rem;
+}
+.card-button:hover{
+    color: white;
+}
+.card-source{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    transition: .3s;
+    background-color: #c4c4c4;  
+    border-radius: .5rem;
+}
+.card-source:hover{
+    color: black;
+}

@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======================================
+--------------Vision 1st main content---------
+====================================== */
+.vision {
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 10rem 1fr 1fr 10rem;
+    /* background-color: aliceblue; */
+    background-color: rgb(247 247 255);
+    /* background-color: white; */
+    /* border: solid black 2px; */
+}
+
+/* ======================================
+--------------Vision left sided area styles---------
+====================================== */
+.vision-left-side{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vision-left{
+    grid-column: 2/3;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black;  */
+}
+.vision-left img{
+    width: 90%;
+    height: AUTO;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ======================================
+--------------Vision Right sided area styles---------
+====================================== */
+.vision-right {
+    grid-column: 3/4;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.vision-right-side{
+    width: 90%;
+    height: auto;
+    padding: .5rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    /* line-height: 1.2; */
+}
+/* .vision-right-side :nth-child(n){
+    padding: .5rem 0rem;
+} */
+.vision-right-side h4 {
+    text-align: left;
+    font-size: 2.5rem;
+    font-family: 'Poppins' SemiBold;
+    margin: 0px;
+    background: linear-gradient(to right, #c83aff, #e217d9, #ee00b5, #f00094, #eb1277);
+    background-clip: text;
+    color: transparent;
+}
+
+.vision-right-side h2{
+    font-size: 5rem;
+    font-family: 'Montserrat';
+    justify-content: left;
+    align-items: left;
+    margin: 0px;
+    letter-spacing: 0.3rem;
+}
+
+.vision-right-side p{
+    height: auto;
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    /* letter-spacing: .1rem; */
+}
+.vision-right-side span {
+    font-size: 1.7rem;
+    font-family: "Rowdies",Regular;
+}
+
+.download-cv{
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding: 1rem 2rem; 
+    border-radius: 1rem;
+    border: 0px;
+    color: white;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    background: linear-gradient(to right, #c83aff, #e217d9, #ee00b5, #f00094, #eb1277);
+    transition: 0.5s;
+    transition-timing-function: ease;
+    opacity: 0.8;
+}
+.download-cv:hover {
+    opacity: 1;
+    color: white;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+        rgba(240, 46, 170, 0.3) -10px 10px,
+        rgba(240, 46, 170, 0.2) -15px 15px,
+        rgba(240, 46, 170, 0.1) -20px 20px,
+        rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.download-cv:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}

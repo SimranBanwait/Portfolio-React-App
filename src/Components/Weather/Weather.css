@@ -1,0 +1,528 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+.weather-container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    position:relative;    
+    /* justify-content: end; */
+    /* align-items: top; */
+    /* background-color: rgba(80, 80, 80, 0.3); */
+    /* z-index: -1; */
+}
+.weather-container :nth-child(1){
+    position: start;
+}
+.weather-container :nth-child(2) {
+    position: end;
+}
+.weather-container::before{
+    content: '';
+    background: url('../../Photos/Weather/clear.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+.weather-top{
+    grid-column: 1/5;
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    /* backdrop-filter: blur(9px); */
+
+    /* border: #16222e solid 2px; */
+}
+.weather-top-left{
+    width: 100%;
+    height: auto;
+    margin: 0rem 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    /* border: #243445 solid 2px; */
+}
+.weather-top-left img{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+.weather-top-left h1 {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    font-family: 'Montserrat';
+    text-shadow: 2px 3px 10px #00000065;
+}
+
+
+.weather-top-right {
+    margin: 0;
+    padding: 0;
+    padding-right: 1rem;
+    margin: 0rem 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+
+    /* border: #243445 solid 2px; */
+}
+.weather-top-right input{
+    width: 30rem;
+    height: 4rem;
+    margin-right: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1rem;
+    color: #243445;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: solid   #b3b3b300 1px;
+    outline: none;
+    border-radius: .6rem;
+}
+.weather-top-right input:focus{
+    outline: none;
+    border: none;
+}
+.weather-top-right input::placeholder {
+    font-weight: 500;
+    color: #243445;
+    opacity: 10;
+}
+
+.weather-top-right button {
+    width: auto;
+    height: 4rem;
+    font-size: 2rem;
+    padding: 0rem 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: .7rem;
+    background-color: #007bff;
+    border: none;
+    transition: 0.3s;
+}
+.weather-top-right button:hover{
+    /* border: none; */
+    color: white;
+    background-color: #007bff;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.weather-top-right button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+
+
+
+
+
+
+
+/* middle part of the page exists here  */
+.weather-middle{    
+    width: 100%;
+    height: 32rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: #243445 solid 2px; */
+}
+.weather-middle-content{
+    width: 60rem;
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: top;
+    /* border-radius: 2rem; */
+    
+    /* backdrop-filter: blur(9px); */
+    /* border: #243445 solid 2px;   */
+}
+.weather-temperature {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: #243445 solid 2px;   */
+}
+.weather-temperature h1{
+    margin: 0;
+    padding: 0;
+    font-size: 12rem;
+    color: white;
+    text-shadow: 2px 3px 10px #00000065;
+}
+
+.weather-status{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.weather-status img {
+    margin: 0rem 3rem;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    text-shadow: 2px 3px 10px #00000065;
+}
+.weather-status p{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 25rem;
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 3px 10px #00000065;
+}
+
+
+
+
+.weather-location h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 5rem;
+    font-weight: 600;
+    text-shadow: 2px 3px 10px #000000b9;
+}
+.weather-location p{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-shadow: 2px 3px 10px #000000b9;
+}
+.weather-location img {
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    text-shadow: 2px 3px 10px #000000b9;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+}
+.clouds {
+    margin: 0;
+    padding: 0;
+    font-size: 10rem;
+    color: #d0cccc;
+    text-shadow: 2px 3px 9px #00000065;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.weather-bottom{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    backdrop-filter: blur(3px);
+
+    /* border:#243445 solid 2px; */
+    border-top: #b2b2b265 solid 1px;
+}
+.weather-bottom h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 5rem;
+}
+.weather-bottom p {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+/* 1st bottom box tyles */
+.weather-humidity {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: #777877 solid 1px;
+}
+
+
+
+
+/* 2nd bottom box tyles */
+.weather-windspeed{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: #777877 solid 1px;
+}
+
+
+
+
+
+/* 3nd bottom box tyles */
+.weather-visibility {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: #777877 solid 1px;
+}
+
+
+
+/* 4th bottom box tyles */
+.weather-condition {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: #777877 solid 1px;
+}
+
+.weather-condition img {
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* daddy div styles */
+.daddy {
+    display: flex;
+}
+
+/* card structure */
+.weatherCard {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, #7b9dff, #57baff, #50d3ff, #6fe8ff, #9cfbff);
+    box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.80), 30px 30px 20px 0 rgba(0, 0, 0, 0.30);
+    font-family: 'Segoe UI', sans-serif;
+    width: 290px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+/* inside the card */
+.form {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-content: center;
+    /* border: solid black 2px; */
+}
+
+
+.input {
+    height: 34px;
+    width: 70%;
+    border-radius: 15px;
+    margin-right: .2rem;
+    outline: none;
+    border-style: solid;
+    padding: .4rem;
+    border-color: #777877;
+}
+
+.button {
+    height: 34px;
+    width: 30%;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-left: .2rem;
+    outline: none;
+    background-color: #66d450;
+    outline: none;
+    border-style: solid;
+    /* border-color: #777877; */
+}
+
+
+/* card info section starts here */
+.info {
+    /* border: solid black 2px; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* main icon and it's types with sun's spinning code */
+.indicator {
+    font-size: 5rem;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-content: center;
+    color: #243445
+}
+
+.sun {
+
+    color: #fff419;
+    animation-name: spin;
+    animation-duration: 20000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: rotate(360deg);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+/* .location{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+} */
+.location :nth-child(n) {
+    margin: .2rem;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.location p {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+}

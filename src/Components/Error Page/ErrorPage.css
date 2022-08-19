@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem ;
+}
+img{
+    width: 60%;
+    height: auto;
+}
