@@ -98,7 +98,7 @@ const News = () => {
                     <div className="news-bottom">
 
                         <div action="" className="form-2">
-                            <button className="search-topic" onClick={searchNews}>News</button>
+                            <button className="search-topic" onClick={searchNews}>News.</button>
                             <button className="search-topic" onClick={searchCovid}>Covid-19</button>
                             <button className="search-topic" onClick={searchBitcoin}>Bitcoin</button>
                             <button className="search-topic" onClick={searchApple}>Apple</button>
