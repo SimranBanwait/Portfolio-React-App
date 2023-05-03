@@ -11,9 +11,9 @@ phases:
     commands:
       - echo Nothing to prebuild
        
-  build:
-    commands:
-      - npm run build
+  # build:
+  #   commands:
+  #     - npm run build
   
   post_build:
     commands:
