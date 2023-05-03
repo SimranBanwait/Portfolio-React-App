@@ -7,6 +7,9 @@ phases:
   
   pre_build:
     commands:
+      - sudo apt install npm -y
+      - sudo apt-get update -y
+      - sudo apt-get ugrade -y
       - echo Installing NPM dependencies
       - npm install
        
