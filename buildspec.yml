@@ -1,15 +1,14 @@
 version: 0.2
 
 phases:
-  # install:
-  #   runtime-versions:
-  #     nodejs: 18
-  #   commands:
-  #     - npm install
+  install:
+    runtime-versions:
+      nodejs: 16
+    commands:
+      - echo Nothing to install
 
   pre_build:
     commands:
-      - echo Nothing to prebuild
       - npm install
        
   build:
