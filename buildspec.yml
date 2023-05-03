@@ -1,22 +1,18 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 18
-  
   pre_build:
     commands:
-      - sudo apt install npm -y
-      - sudo apt-get update -y
-      - sudo apt-get ugrade -y
+      # - sudo apt install npm -y
+      # - sudo apt-get update -y
+      # - sudo apt-get ugrade -y
       - echo Installing NPM dependencies
       - npm install
        
   build:
     commands:
         # run build script
-        - npm run-script build
+        - npm run build
      
 # artifacts:
 #   # include all files required to run application
@@ -31,4 +27,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: build
+  # base-directory: build
