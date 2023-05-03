@@ -7,6 +7,8 @@ phases:
    
     commands:
         # install npm
+        - sudo apt-get update
+        - sudo apt-get upgrade
         - npm install
        
   build:
