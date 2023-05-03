@@ -4,14 +4,12 @@ phases:
   install:
     runtime-versions:
       nodejs: 16
+    commands:
+      - npm install
 
   pre_build:
     commands:
-      # - sudo apt install npm -y
-      # - sudo apt-get update -y
-      # - sudo apt-get ugrade -y
-      - echo Installing NPM dependencies
-      - npm install
+      - echo Nothing to prebuild
        
   build:
     commands:
