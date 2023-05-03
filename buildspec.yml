@@ -4,17 +4,16 @@ phases:
   install:
     runtime-versions:
       nodejs: 18
-   
+  
+  pre_build:
     commands:
-        # install npm
-        - sudo apt-get update
-        - sudo apt-get upgrade
-        - npm install
+      - echo Installing NPM dependencies
+      - npm install
        
   build:
     commands:
         # run build script
-        - npm run-script build
+        - npm run build
         - zip -r deployment_package.zip *
      
 artifacts:
