@@ -4,7 +4,7 @@ phases:
   install:
     runtime-versions:
       nodejs: 16
-      
+
   pre_build:
     commands:
       # - sudo apt install npm -y
@@ -15,7 +15,6 @@ phases:
        
   build:
     commands:
-        # run build script
         - npm run build
      
 # artifacts:
