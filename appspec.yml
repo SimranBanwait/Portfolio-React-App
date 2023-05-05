@@ -6,10 +6,10 @@ files:
 
 hooks:
    BeforeInstall:
-    - location: beforeinstall.sh
+    - location: scriptss/beforeinstall.sh
       runas: root
       timeout: 300
    ApplicationStart:
-    - location: afterinstall.sh
+    - location: scriptss/afterinstall.sh
       runas: root
       timeout: 300
