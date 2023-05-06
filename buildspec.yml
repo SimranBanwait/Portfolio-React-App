@@ -25,7 +25,7 @@ artifacts:
     - appspec.yml
     - 'scripts'
     - '**/*'
-  # base-directory: 'build'
+  base-directory: 'build'
 
   cache:
     paths:
