@@ -1,11 +1,11 @@
 version: 0.0
 os: linux
 files:
-   - source: /
-     destination: /Pipeline
+  - source: /
+    destination: /Pipeline
 
 hooks:
-   BeforeInstall:
+  BeforeInstall:
     - location: scripts/beforeinstall.sh
       runas: root
       timeout: 300
