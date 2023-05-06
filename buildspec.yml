@@ -23,10 +23,10 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: 'build'
+  # base-directory: 'build'
 
-  cache:
-    paths:
-      - '/root/.m2/**/*'
-      - '/root/.npm/**/*'
-      - 'build/**/*'
+  # cache:
+  #   paths:
+  #     - '/root/.m2/**/*'
+  #     - '/root/.npm/**/*'
+  #     - 'build/**/*'
