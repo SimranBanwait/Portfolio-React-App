@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+cd home/ubuntu/Pipeline
 sudo apt-get update
 sudo apt-get upgrade
 
