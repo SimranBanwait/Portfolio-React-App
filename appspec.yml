@@ -9,7 +9,7 @@ hooks:
     - location: scripts/beforeinstall.sh
       runas: root
       timeout: 300
-   ApplicationStart:
+  ApplicationStart:
     - location: scripts/afterinstall.sh
       runas: root
       timeout: 300
