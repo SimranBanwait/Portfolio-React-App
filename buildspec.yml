@@ -23,12 +23,15 @@ phases:
 artifacts:
   files:
     - appspec.yml
-    - 'scripts'
+    - package.json
+    - src/**/* 
+    - scripts/**/*
+    - public/**/*
     - '**/*'
   # base-directory: 'build'
 
-  cache:
-    paths:
-      - '/root/.m2/**/*'
-      - '/root/.npm/**/*'
-      - 'build/**/*'
+  # cache:
+  #   paths:
+  #     - '/root/.m2/**/*'
+  #     - '/root/.npm/**/*'
+  #     - 'build/**/*'

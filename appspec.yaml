@@ -4,6 +4,12 @@ files:
   - source: /
     destination: /home/ubuntu/Pipeline
 
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ubuntu
+    group: ubuntu
+
 hooks:
   BeforeInstall:
     - location: scripts/beforeinstall.sh
