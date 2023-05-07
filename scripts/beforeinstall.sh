@@ -11,5 +11,6 @@ nvm install --lts
 sudo apt install npm
 
 npm install
+npm start
 npm install pm2 -g
 npm install serve -g
