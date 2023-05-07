@@ -4,8 +4,9 @@
 cd home/ubuntu/Pipeline
 
 #updating build modules
-sudo rm -rf node_modules
-npm install
+# sudo rm -rf node_modules
+# npm install
+# npm start
 
 #Running the app
 pm2 server build 8080 --spa
