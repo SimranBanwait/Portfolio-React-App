@@ -9,6 +9,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 nvm install --lts
 
 sudo apt install npm
+
 npm install
 npm install pm2 -g
 npm install serve -g
