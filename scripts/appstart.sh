@@ -12,6 +12,6 @@ cd home/ubuntu/Pipeline
 npm install
 npm start
 npm fund
-npm install pm2 -g
-npm install serve -g
-pm2 server build 8080 --spa
+# npm install pm2 -g
+# npm install serve -g
+# pm2 server build 8080 --spa
