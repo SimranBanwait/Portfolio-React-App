@@ -121,7 +121,7 @@ const ContactUs = () => {
                         </div>
                         
                         <div className="send-button">
-                            <button type='submit' className='send' onClick={dataSubmitter}>Send Info</button>
+                            <button type='submit' className='send' onClick={dataSubmitter}>SEND INFO</button>
                         </div>
 
 
