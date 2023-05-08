@@ -12,4 +12,4 @@ nvm install --lts
 npm install
 npm start
 npm install pm2 -g
-npm install serve -g
+npm install --global serve
