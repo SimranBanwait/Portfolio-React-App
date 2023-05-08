@@ -10,14 +10,16 @@ sudo apt-get upgrade
 # nvm install --lts
 # sudo apt install nodejs
 
+
 #Method 2
-sudo apt install curl 
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - | sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys xargs
-sudo apt-get install -y Node.js 
+# sudo apt install curl 
+# curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - | sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys xargs
+# sudo apt-get install -y Node.js 
+
 
 #Method 3
-# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash 
-# nvm install node 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash 
+nvm install node 
 
 
 
