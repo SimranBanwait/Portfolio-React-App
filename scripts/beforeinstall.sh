@@ -9,7 +9,10 @@ sudo apt-get upgrade
 # nvm install --lts
 # sudo apt install nodejs
 
+sudo apt install curl 
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - | sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys xargs
+
 # npm install
 # npm start
-# npm install pm2 -g
-# npm install --global serve
+npm install pm2 -g
+npm install --global serve
