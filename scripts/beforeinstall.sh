@@ -9,7 +9,7 @@ sudo apt-get upgrade
 # nvm install --lts
 # sudo apt install nodejs
 
-npm install
+# npm install
 # npm start
 # npm install pm2 -g
 # npm install --global serve
