@@ -11,5 +11,5 @@ sudo apt install nodejs
 
 npm install
 # npm start
-npm install pm2 -g
-npm install --global serve
+# npm install pm2 -g
+# npm install --global serve

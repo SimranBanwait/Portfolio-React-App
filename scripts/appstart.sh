@@ -10,5 +10,6 @@ cd home/ubuntu/Pipeline
 
 #Running the app
 # npm install
-
+npm install pm2 -g
+npm install --global serve
 pm2 server build 8080 --spa
