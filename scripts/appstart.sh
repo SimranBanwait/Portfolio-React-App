@@ -8,8 +8,8 @@
 
 #Running the app
 # npm install
-npm install pm2 -g
-npm install --global serve
+# npm install pm2 -g
+# npm install --global serve
 
 #changing directory
 cd home/ubuntu/Pipeline
