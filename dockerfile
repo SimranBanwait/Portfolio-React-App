@@ -9,5 +9,5 @@ CMD npm run build
 FROM nginx:alpine3.17
 WORKDIR /usr/share/nginx/html
 CMD rm -r ./* 
-COPY --from=ReactContainer /Portfolio/build
+COPY --from=ReactContainer /Portfolio/build .
 ENTRYPOINT [ "nginx","-g","daemon off;" ]
