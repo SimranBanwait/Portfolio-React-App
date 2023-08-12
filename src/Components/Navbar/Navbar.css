@@ -80,14 +80,15 @@ rigth side of all navbar elements
     text-decoration: none;
     color:#19202b;
     margin: 0rem 1.5rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     letter-spacing: 0.1rem;
     cursor: pointer;
-    font-family: Montserrat SemiBold;
+    /* font-family: sans-serif; */
+    font-weight: bold;
     transition: 0.5s;
     border-style: none;
 }

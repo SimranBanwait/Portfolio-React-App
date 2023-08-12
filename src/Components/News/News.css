@@ -55,7 +55,7 @@ top part of the nbews compnent starts here
     width: auto;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
     font-size: 5rem;
 }
 /* searchbox and button area  */
@@ -169,7 +169,7 @@ cards section of grid and all cards deisgn
     padding: 1rem;
     font-size: normal;
     font-weight: 600;
-    font-family: "poppins";
+    /* font-family: "poppins"; */
 }
 .card-text{
     width: 100;
