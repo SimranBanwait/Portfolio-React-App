@@ -1,3 +1,6 @@
+### VERY IMPORTANT INFO !!!!!!!!!!!!!! 
+### Time to time we have to use the command NPM upate to update all the packages or else, the image is not going to build
+
 # FROM node:16-alpine as building
 # WORKDIR /app
 # COPY ./package.json .
