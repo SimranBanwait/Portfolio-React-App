@@ -1,21 +1,21 @@
-FROM node:16-alpine as building
-WORKDIR /app
-COPY ./package.json .
-RUN npm install
-COPY . .
-RUN npm run build
-EXPOSE 3000
-CMD ["npm", "run", "start"]
+# FROM node:16-alpine as building
+# WORKDIR /app
+# COPY ./package.json .
+# RUN npm install
+# COPY . .
+# RUN npm run build
+# EXPOSE 3000
+# CMD ["npm", "run", "start"]
 
-FROM nginx:alpine
-COPY --from=building /app/build /usr/share/nginx/html
-RUN chmod 777 /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# FROM nginx:alpine
+# COPY --from=building /app/build /usr/share/nginx/html
+# RUN chmod 777 /usr/share/nginx/html
+# EXPOSE 80
+# CMD ["nginx", "-g", "daemon off;"]
  
 #Real Stuff -- Upar wala bekaar
 
-FROM node:alpine3.17 as ReactContainer
+FROM node:alpine3.18 as ReactContainer
 WORKDIR /Portfolio
 COPY package.json /Portfolio
 RUN npm install
